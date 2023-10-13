@@ -1,7 +1,7 @@
 <script>
 	import { AppRailAnchor, AppShell, AppBar, LightSwitch, initializeStores, Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import '../app.postcss';
-
+	import '@fortawesome/fontawesome-svg-core';
 	
 	initializeStores();
 	const drawerStore = getDrawerStore();
