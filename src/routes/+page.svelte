@@ -1,5 +1,6 @@
 <script>
 	import About from '$lib/components/about/+about.svelte';
+	import Contact from '$lib/components/contact/+contact.svelte';
 	import Project from '$lib/components/projects/+project.svelte';
 	import Skills from '$lib/components/skills/+skills.svelte';
 	import { Avatar } from '@skeletonlabs/skeleton';
@@ -21,6 +22,9 @@
     </section>
     <section id="Projects" class="card">
         <Project />
+    </section>
+    <section>
+        <Contact />
     </section>
 </main>
 <style>

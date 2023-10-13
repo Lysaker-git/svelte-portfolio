@@ -27,7 +27,14 @@
 	<!-- Router Slot -->
 	<slot />
 	<!-- ---- / ---- -->
-	<!-- <svelte:fragment slot="pageFooter">Page Footer</svelte:fragment> -->
+	<svelte:fragment slot="pageFooter">
+		<h2>Sitemap</h2>
+		<ul class="ms-4 flex gap-8">
+			<li><a href="#Projects">Projects</a></li>
+			<li><a href="#About">About Me</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</svelte:fragment>
 	<svelte:fragment slot="footer">
 			<nav class="mb-4 fixed bottom-0 left-0 right-0">
 				<ul class="ms-4 flex gap-8">
