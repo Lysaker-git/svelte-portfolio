@@ -1,39 +1,50 @@
 <script lang='ts'>
     import { skills } from "../utils/skills";
     import { projects } from "../utils/projects";
+    import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
 
-    let elemCarousel: HTMLDivElement;
-    function carouselLeft(): void {
-        const x =
-            elemCarousel.scrollLeft === 0
-                ? elemCarousel.clientWidth * elemCarousel.childElementCount // loop
-                : elemCarousel.scrollLeft - elemCarousel.clientWidth; // step left
-        elemCarousel.scroll(x, 0);
-    }
-    function carouselRight(): void {
-	const x =
-		elemCarousel.scrollLeft === elemCarousel.scrollWidth - elemCarousel.clientWidth
-			? 0 // loop
-			: elemCarousel.scrollLeft + elemCarousel.clientWidth; // step right
-	    elemCarousel.scroll(x, 0); 
-    }
 </script>
 
 
-<section class="grid gap-10 grid-cols-1 md:grid-cols-2 p-4 mx-auto">
+<section class="grid gap-10 grid-cols-1 md:grid-cols-2">
     {#each projects as project}
-        <div class="mb-4 card">
+        <div class="mb-4 card shadow-sm">
             <div>
                 <img class="w-full h-80 object-cover" src="{project.images}" alt="Image of {project.name}"/>
             </div>
             <div class="p-8">
-                <h3 class="text-lg font-bold">{project.name}</h3>
-                <p>{project.description}</p>
-                <div>
-                    <a href={project.link} class="btn variant-filled">
+                <h3 class="h3 font-bold">{project.name}</h3>
+                <Accordion autocollapse>
+                    <AccordionItem open>
+                        <svelte:fragment slot="lead">
+                            <i class="fa-solid fa-eye"></i>
+                        </svelte:fragment>
+                        <svelte:fragment slot="summary">
+                            Overview
+                        </svelte:fragment>
+                        <svelte:fragment slot="content">
+                            {project.overview}
+                        </svelte:fragment>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <svelte:fragment slot="lead">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </svelte:fragment>
+                        <svelte:fragment slot="summary">
+                            Details
+                        </svelte:fragment>
+                        <svelte:fragment slot="content">
+                            {project.description}
+                        </svelte:fragment>
+                    </AccordionItem>
+                </Accordion>
+                <div class="mt-8 mb-4 flex">
+                    {#if project.link !== ''}
+                    <a href={project.link} target="_blank" class="mr-3 btn variant-filled">
                         Live Page
                     </a>
-                    <a href={project.github} class="btn variant-outline-primary">
+                    {/if}
+                    <a href={project.github} target="_blank" class="btn variant-outline-primary">
                         <i class='fa-brands fa-github'></i>
                         Github
                     </a>
