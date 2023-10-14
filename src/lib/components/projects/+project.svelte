@@ -20,49 +20,37 @@
 </script>
 
 
-
-{#each projects as project}
-    <div class="p-4 grid grid-cols-[auto_1fr_auto] gap-4 items-center">
-        <button type="button" class="btn-icon variant-filled" on:click={carouselLeft}>
-            <i class="fa-solid fa-arrow-left" />
-        </button>
-        <div bind:this={elemCarousel} class="snap-x snap-mandatory scroll-smooth flex overflow-x-auto">
-            {#each project.images as image}
-                <img
-                    class="snap-center w-[540px] rounded-container-token"
-                    src="{image}"
-                    alt='{image}'
-                    loading="lazy"
-                />
-            {/each}
+<section class="grid gap-10 grid-cols-1 md:grid-cols-2 p-4 mx-auto">
+    {#each projects as project}
+        <div class="mb-4 card">
+            <div>
+                <img class="w-full h-80 object-cover" src="{project.images}" alt="Image of {project.name}"/>
+            </div>
+            <div class="p-8">
+                <h3 class="text-lg font-bold">{project.name}</h3>
+                <p>{project.description}</p>
+                <div>
+                    <a href={project.link} class="btn variant-filled">
+                        Live Page
+                    </a>
+                    <a href={project.github} class="btn variant-outline-primary">
+                        <i class='fa-brands fa-github'></i>
+                        Github
+                    </a>
+                </div>
+                <div class="flex flex-row gap-4">
+                    {#each project.tags as tag}
+                        {#each skills as skill}
+                            {#if tag === skill.name}
+                            <div class="badge variant-filled">
+                                <i class={skill.icon}></i>
+                                <p>{skill.name}</p>
+                            </div>
+                            {/if}
+                        {/each}
+                    {/each}
+                </div>
+            </div>
         </div>
-        <button type="button" class="btn-icon variant-filled" on:click={carouselRight}>
-            <i class="fa-solid fa-arrow-right" />
-        </button>
-    </div>
-    <div class="p-4">
-        <h3>{project.name}</h3>
-        <p>{project.description}</p>
-        <div>
-            <a href={project.link} class="btn variant-filled">
-                Live Page
-            </a>
-            <a href={project.github} class="btn variant-outline-primary">
-                <i class='fa-brands fa-github'></i>
-                Github
-            </a>
-        </div>
-        <div class="flex flex-row gap-4">
-            {#each project.tags as tag}
-                {#each skills as skill}
-                    {#if tag === skill.name}
-                    <div class="badge variant-filled">
-                        <i class={skill.icon}></i>
-                        <p>{skill.name}</p>
-                    </div>
-                    {/if}
-                {/each}
-            {/each}
-        </div>
-    </div>
 {/each}
+</section>

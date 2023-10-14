@@ -2,7 +2,7 @@
     import { skills } from "../utils/skills";
 </script>
 
-<div class="card p-4">
+<div class="card px-4 py-16">
     <div class="card-header grid place-items-center py-4">
         <h2 class="font-bold text-2xl underline">My skills</h2>
     </div>

@@ -19,10 +19,10 @@
     <section class ="p-4 mx-auto max-w-6xl">
         <Skills />
     </section>
-    <section id="Projects" class="card scroll-smooth">
+    <section id="Projects" class="mt-60 max-w-6xl">
         <Project />
     </section>
-    <section id="Contact">
+    <section id="Contact" class="max-w-6xl">
         <Contact />
     </section>
 </main>
