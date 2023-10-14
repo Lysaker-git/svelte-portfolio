@@ -6,8 +6,8 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 </script>
-<main>
-    <section class="mx-auto min-h-screen grid place-items-center">
+<main class="scroll-smooth">
+    <section class="mx-auto min-h-screen grid place-items-center ">
         <div>
             <h1 class="sm:p-4 p-0 m-4">Navigating the Digital Frontier</h1>
             <p class="sm:p-4 p-0 m-4">Modern, Accessible Front-End Wonders.</p>
@@ -20,10 +20,10 @@
     <section>
         <Skills />
     </section>
-    <section id="Projects" class="card">
+    <section id="Projects" class="card scroll-smooth">
         <Project />
     </section>
-    <section>
+    <section id="Contact">
         <Contact />
     </section>
 </main>
