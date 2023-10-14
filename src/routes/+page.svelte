@@ -13,11 +13,10 @@
             <p class="sm:p-4 p-0 m-4">Modern, Accessible Front-End Wonders.</p>
         </div>
     </section>
-    <section id="About" style="p-4 my-auto max-w-screen-xl">
-        <Avatar src="https://avatars.githubusercontent.com/u/68820814?v=4" width="w-32" rounded="rounded-full"></Avatar>
+    <section id="About" class="p-4 mx-auto max-w-6xl">
         <About />
     </section>
-    <section>
+    <section class ="p-4 mx-auto max-w-6xl">
         <Skills />
     </section>
     <section id="Projects" class="card scroll-smooth">
