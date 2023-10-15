@@ -6,5 +6,11 @@ export const skills = [
     { name: 'React', icon: 'fa-brands fa-react' , type: 'fontAwesome'},
     { name: 'Figma', icon: 'fa-brands fa-figma' , type: 'fontAwesome'},
     { name: 'GitHub', icon: 'fa-brands fa-github' , type: 'fontAwesome'},
-    { name: 'WordPress', icon: 'fa-brands fa-wordpress' , type: 'fontAwesome'}
+    { name: 'WordPress', icon: 'fa-brands fa-wordpress' , type: 'fontAwesome'},
+    { name: 'MS VBA, Power Fx, M, Dax', icon: 'fa-brands fa-windows', type: 'fontAwesome' },
+    { name: 'Python', icon: 'fa-brands fa-python', type: 'fontAwesome' },
+    { name: 'Google', icon: 'fa-brands fa-google', type: 'fontAwesome' },
+    { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap', type: 'fontAwesome' },
+    { name: 'Svelte', icon: '', type: 'svg' },
+    { name: 'Typescript', icon: '', type: 'svg' }
 ];

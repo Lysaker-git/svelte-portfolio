@@ -3,7 +3,7 @@ export const projects = [
         name: 'Epic Bids', 
         link: 'https://lysaker-git.github.io/Semester-Project-2_Noroff/index.html', 
         github: 'https://github.com/Lysaker-git/Semester-Project-2_Noroff', 
-        images: 'https://source.unsplash.com/Jp6O3FFRdEI/1024x768',
+        images: 'https://raw.githubusercontent.com/Lysaker-git/svelte-portfolio/master/src/lib/assets/epicBids.jpg',
         overview: 'Semester project year two at Noroff Academy. Imitation of a Auction site - Called Epic Bids.',
         description: 'This project was made with Bootstrap and basic HTML, JS an CSS. The site is called Epic bids and is supposed to imitate a Auction Site. We had access to the Noroff API so that we could make accounts - make our own auctions and bid on other auctions.', 
         tags: [

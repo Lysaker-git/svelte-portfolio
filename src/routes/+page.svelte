@@ -48,11 +48,10 @@
         content: '';
         background: rgba(116, 96, 21, 0.1);
         clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
-        left: -2000px;
-        right: -2000px;
+        left: 0;
+        right: 0;
         bottom: 0;
         height: 55rem;
         z-index: -1;
-        /* overflow: hidden; */
     }
 </style>
