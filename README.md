@@ -1,38 +1,41 @@
-# create-svelte
+# Robin Lysakers Portfolio
+Svelte Portfolio 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Final portfolio for my school
+This is a simple and responsive portfolio from my school semester. It is made with Svelte and SkeletonUI - supplemented by a little typescript. 
 
-## Creating a project
+## Description
+This is my second go at a portfolio using my stack of choice - Svelte together with SkeletonUI. It is built over the course of a week. Contact form functionality is not up to date yet as i need to figure out how i want to approach it. 
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Installation
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+1. Clone the repo
+  ```sh
+    gh repo clone Lysaker-git/svelte-portfolio
+  ```
+2. Install NPM packages
+  ```sh
+    npm install
+  ```
+3. Run Build to build project
+  ```
+  npm run build
+  ```
+4. Run Dev to view site
+  ```
+  npm run dev
+  ```
+  
+## License
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Distributed under the MIT License.
 
-## Developing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Contact
 
-```bash
-npm run dev
+Robin L - lysakerwcs@hotmail.com
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Project Link: [https://github.com/Lysaker-git/Semester-Project-2_Noroff](https://github.com/Lysaker-git/Semester-Project-2_Noroff)
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
