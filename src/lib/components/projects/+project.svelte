@@ -8,7 +8,7 @@
 
 <section class="grid gap-10 grid-cols-1 md:grid-cols-2">
     {#each projects as project}
-        <div class="mb-4 card shadow-sm">
+        <div class="mb-4 card shadow-sm overflow-hidden">
             <div>
                 <img class="w-full h-80 object-cover" src="{project.images}" alt="Image of {project.name}"/>
             </div>
