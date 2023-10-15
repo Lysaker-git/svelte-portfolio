@@ -9,8 +9,8 @@
 <main class="scroll-smooth">
     <section class="mx-auto min-h-screen grid place-items-center ">
         <div class="grid place-items-start">
-            <h1 class="sm:p-4 p-0">Navigating the Digital Frontier</h1>
-            <p class="sm:p-4 p-0 m-4">Modern, Accessible Front-End Wonders.</p>
+            <h1 class="h1 px-4 md:p-0">Navigating the Digital Frontier</h1>
+            <p class="px-4 md:p-0 m-4">Modern, Accessible Front-End Wonders.</p>
         </div>
     </section>
     <section id="About" class="p-4 mx-auto max-w-6xl">
@@ -53,5 +53,18 @@
         bottom: 0;
         height: 55rem;
         z-index: -1;
+    }
+    @media only screen and (max-width: 1023px) {
+        .customContact::before {
+            height: 68rem;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .customContact::before {
+            height: 62rem;
+        }
+    }
+    @media only screen and (max-width: 639px) {
+
     }
 </style>

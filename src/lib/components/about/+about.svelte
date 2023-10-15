@@ -5,9 +5,9 @@
 </script>
 <div class="overflow-hidden rounded-md">
     <AppBar>
-        <div class="grid place-items-center grid-cols-[auto_1fr] max-w-6xl py-8">
+        <div class="grid place-items-center grid-cols-1 md:grid-cols-[auto_1fr] max-w-6xl py-8">
             <Avatar src="https://avatars.githubusercontent.com/u/68820814?v=4" width="w-60" rounded="rounded-full"></Avatar>
-            <div class="w-full ml-16">
+            <div class="w-full ml-16 mt-8 md:mt-0">
                 <Accordion autocollapse>
                     <AccordionItem open>
                         <svelte:fragment slot="lead">

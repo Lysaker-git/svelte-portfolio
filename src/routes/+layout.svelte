@@ -40,7 +40,7 @@
 
 <style>
 	nav a {
-		font-size: clamp(.5rem, calc(2vw + 1rem), 2rem);
+		font-size: clamp(.5rem, calc(2vw + .5rem), 2rem);
 		padding: .5rem 1rem;
 	}
 	li:hover {

@@ -40,5 +40,31 @@ export const projects = [
             'CSS',
             'React',
         ] 
+    },
+    { 
+        name: 'GameHub', 
+        link: '', 
+        github: 'https://github.com/Lysaker-git/Gamehub-basics', 
+        images: 'https://raw.githubusercontent.com/Lysaker-git/Gamehub-basics/main/Assets/site-preview.jpg',
+        overview: 'A online Game Hub - where you could purchase games, sell and be a part of a community',
+        description: 'The first cross course project built with originally HTML and CSS - added vanilla JS in the end. Static interaction between pages, but the site is fully responsive and ready to go. Was the first project we worked on.', 
+        tags: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+        ] 
+    },
+    { 
+        name: 'Portfolio', 
+        link: '', 
+        github: 'https://github.com/Lysaker-git/Portfolio', 
+        images: 'https://raw.githubusercontent.com/Lysaker-git/Portfolio/main/assets/site%20preview.png',
+        overview: 'My first go at a portfolio built on simple techs. Played around with some different design elements making most areas cover the screen.',
+        description: 'The first portfolio after year one at Noroff - being replaced by this one. Its built with HTML, and Javascript from the knowledge i had at that time. Design was a high focus to make it pop a little extra.', 
+        tags: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+        ] 
     }
 ]

@@ -42,7 +42,7 @@
                 <div>
                     <div class="mt-8 mb-4 flex">
                         {#if project.link !== ''}
-                        <a href={project.link} target="_blank" class="mr-3 btn variant-filled">
+                        <a href={project.link} target="_blank" class="mr-3 btn variant-filled-primary">
                             Live Page
                         </a>
                         {/if}
